@@ -18,7 +18,7 @@ sobel_x = cv.convertScaleAbs(grad_x)
 sobel_y = cv.convertScaleAbs(grad_y)
 
 
-# 에지 강도 계싼
+# 에지 강도 계산
 edge_strength = cv.addWeighted(
     sobel_x, 0.5, sobel_y, 0.5, 0
 )
